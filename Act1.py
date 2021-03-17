@@ -12,6 +12,7 @@ Exercises
 """
 tEC
 """
+import turtle
 from turtle import *
 from freegames import vector
 
@@ -37,7 +38,12 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    turtle.color("Red","Yellow")
+    turtle.begin_fill()
+    turtle.circle(80)
+    turtle.end_fill
+    
+# TODO
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
