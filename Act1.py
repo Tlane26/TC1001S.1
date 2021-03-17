@@ -9,9 +9,7 @@ Exercises
 5. Add width parameter.
 
 """
-"""
-tEC
-"""
+
 import turtle
 from turtle import *
 from freegames import vector
@@ -38,12 +36,11 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    turtle.color("Red","Yellow")
-    turtle.begin_fill()
-    turtle.circle(80)
-    turtle.end_fill
+    turtle.color("Red","Yellow") #Importando de la biblioteca el turtle para crear el circulo esta primera parte define el color de la flecha y su interior
+    turtle.begin_fill() #Aqui empieza con el llenado iniciando el ciclo 
+    turtle.circle(80) #nos crea un tamaño adecuado a las capacidades de la pantalla
+    turtle.end_fill() #Y esta parte el lo que nos permite terminar el ciclo para que no sea inifnito y tenga un final 
     
-# TODO
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
