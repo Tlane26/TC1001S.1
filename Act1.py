@@ -44,11 +44,33 @@ def circle(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    up() #Mueve el cursor sin dibujar
+    goto(start.x, start.y)
+    down() #Mueve el cursor mientras dibuja
+    begin_fill() #Funcion que permite el trazado de la figura
+
+    for count in range(2): #Bucle para el trazado y rellenado de la figura
+        forward(end.x - start.x)
+        left(90)
+        forward(end.x + start.x / 2)
+        left(90)
+    end_fill()  # Termina la funcion de rellenado // sin esta linea la figura solo tiene borde
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    pass  # TODO
+    up() #Mueve el cursor sin dibujar
+    goto(start.x, start.y)
+    down() #Mueve el cursor mientras dibuja
+    begin_fill() #Funcion que permite el trazado de la figura
+
+    for count in range(1): #Bucle para el trazado y  rellenado de la figura
+        forward(end.x - start.x) 
+        left(120)
+        forward(end.x - start.x)
+        left(120)
+        forward(end.x - start.x)
+        
+    end_fill() # Termina la funcion de rellenado // sin esta linea la figura solo tiene borde
 
 def tap(x, y):
     "Store starting point or draw shape."
